@@ -16,6 +16,8 @@ import Button from "primevue/button";
 import Menubar from "primevue/menubar";
 import Sidebar from "primevue/sidebar";
 import Toolbar from "primevue/toolbar";
+import DataTable from "primevue/datatable";
+import Column from "primevue/column";
 
 const app = createApp(App);
 
@@ -25,4 +27,6 @@ app.component('pv-button', Button);
 app.component('pv-menubar', Menubar);
 app.component('pv-sidebar', Sidebar);
 app.component('pv-toolbar', Toolbar);
+app.component('pv-datatable', DataTable);
+app.component('pv-column', Column);
 app.mount('#app');
