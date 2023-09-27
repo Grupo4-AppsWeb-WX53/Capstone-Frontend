@@ -1,5 +1,5 @@
 <script>
-import HeaderContentComponent from "@/public/components/header-content-component.vue";
+import HeaderContentComponent from "./public/components/header-content-component.vue";
 import SideBarComponent from "./public/components/sidebar-component.vue";
 import {sidebarWidth} from "./public/services/state.js";
 
@@ -35,9 +35,7 @@ export default {
             <template #start>
                 <div class="flex inline-block justify-content-between align-items-center">
 
-                    <div><pv-button icon="pi pi-bars" @click="toggleSidebar"></pv-button></div>
-
-
+                    <header-content-component></header-content-component>
 
                 </div>
 

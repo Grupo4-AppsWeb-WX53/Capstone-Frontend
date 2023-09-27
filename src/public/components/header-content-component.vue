@@ -29,14 +29,14 @@
 
 <script>
 export default {
-    name: "header-content",
+    name: "header-content-component",
     data(){
         return {
             items: [
-                { label: 'Market', icon: 'store'},
-                { label: 'Shopping Chart', icon:'add_shopping_cart'},
-                { label: 'Notifications', icon:'notifications_active'},
-                { label: 'User', icon:'person'}
+                { label: 'Market', icon: 'store', to: '/market'},
+                { label: 'Shopping Chart', icon:'add_shopping_cart', to: '/shopping-chart'},
+                { label: 'Notifications', icon:'notifications_active', to: '/notification'},
+                { label: 'User', icon:'person',to: '/user'}
             ]
         }
     }
