@@ -1,47 +1,80 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script>
+import HeaderContentComponent from "@/public/components/header-content-component.vue";
+import SideBarComponent from "./public/components/sidebar-component.vue";
+import {sidebarWidth} from "./public/services/state.js";
+
+
+export default {
+    name: 'App',
+    computed: {
+        sidebarWidth() {
+            return sidebarWidth
+        }
+    },
+    components: {SideBarComponent, HeaderContentComponent},
+
+    data(){
+        return{
+            sidebarVisible: false,
+        }
+    },
+    created() {
+        console.log('created');
+    },
+    methods: {
+        toggleSidebar() {
+            this.sidebarVisible = !this.sidebarVisible;
+        }
+    }
+}
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <div class="w-full">
+        <pv-menubar class="pb-0 pt-0 w-full">
+            <template #start>
+                <div class="flex inline-block justify-content-between align-items-center">
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+                    <div><pv-button icon="pi pi-bars" @click="toggleSidebar"></pv-button></div>
+
+
+
+                </div>
+
+                <side-bar-component v-model:visible="sidebarVisible"></side-bar-component>
+            </template>
+        </pv-menubar>
+
+
+        <router-view></router-view>
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+
+*{
+    background-color: white;
+    color: black;
+}
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+#nav {
+    padding: 30px;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+#nav a {
+    font-weight: bold;
+    color: #2c3e50;
 }
+
+#nav a.router-link-exact-active {
+    color: #42b983;
+}
+
 </style>
