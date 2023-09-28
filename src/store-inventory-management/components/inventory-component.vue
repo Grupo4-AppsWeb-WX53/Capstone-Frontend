@@ -2,19 +2,20 @@
     <div>
         <div class="card">
             <!-- Toolbar Section -->
+            <!-- Toolbar Section -->
             <pv-toolbar class="mb-4">
                 <template #start>
                     <pv-button label="New" icon="pi pi-plus"
-                               class="p-button-success mr-2"
+                               class="p-button-rounded p-button-success mr-2"
                                @click="openNew"></pv-button>
                     <pv-button label="Delete" icon="pi pi-trash"
-                               class="p-button-danger"
+                               class="p-button-rounded p-button-danger"
                                @click="confirmDeleteSelected"
                                :disabled="!selectedProducts || !selectedProducts.length"></pv-button>
                 </template>
                 <template #end>
                     <pv-button label="Export" icon="pi pi-download"
-                               class="p-button-help"
+                               class="p-button-rounded p-button-help"
                                @click="exportToCsv($event)"></pv-button>
                 </template>
             </pv-toolbar>
