@@ -1,5 +1,5 @@
 <script>
-import SidebarLink from './sidebar-Link-component.vue'
+import SidebarLink from './sidebar-link-component.vue'
 import { collapsed, toggleSidebar, sidebarWidth } from '../services/state.js'
 //import PersonalData from "../services/personal-data-component.vue";
 
