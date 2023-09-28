@@ -22,7 +22,7 @@ export default {
         </h1>
 
 
-        <SidebarLink to="/" icon="fas fa-home">Home</SidebarLink>
+        <SidebarLink to="/home" icon="fas fa-home">Home</SidebarLink>
         <SidebarLink to="/personal-data" icon="fas fa-id-card-clip">Personal Data</SidebarLink>
         <SidebarLink to="/payment" icon="fas fa-money-bill">Payment</SidebarLink>
         <SidebarLink to="/notification" icon="fas fa-bell">Notifications</SidebarLink>

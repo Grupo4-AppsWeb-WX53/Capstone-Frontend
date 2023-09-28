@@ -16,6 +16,8 @@ import Button from "primevue/button";
 import Menubar from "primevue/menubar";
 import Sidebar from "primevue/sidebar";
 import Toolbar from "primevue/toolbar";
+import Card from 'primevue/card';
+import Avatar from 'primevue/avatar';
 
 const app = createApp(App);
 
@@ -25,4 +27,6 @@ app.component('pv-button', Button);
 app.component('pv-menubar', Menubar);
 app.component('pv-sidebar', Sidebar);
 app.component('pv-toolbar', Toolbar);
+app.component('pv-card', Card);
+app.component('pv-avatar', Avatar);
 app.mount('#app');
