@@ -26,7 +26,6 @@ import OrderList from 'primevue/orderlist';
 import Sidebar from "primevue/sidebar";
 import Tag from "primevue/tag";
 import Toolbar from "primevue/toolbar";
-import Card from 'primevue/card';
 import Avatar from 'primevue/avatar';
 
 const app = createApp(App);
@@ -47,6 +46,8 @@ app.component('OrderList', OrderList);
 app.component('pv-sidebar', Sidebar);
 app.component('pv-tag', Tag);
 app.component('pv-toolbar', Toolbar);
+app.component('pv-datatable', DataTable);
+app.component('pv-column', Column);
 app.component('pv-card', Card);
 app.component('pv-avatar', Avatar);
 app.mount('#app');

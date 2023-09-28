@@ -1,4 +1,5 @@
-//Routing Module
+import {createRouter, createWebHistory} from "vue-router";
+import shoppingCar from "@/sales-management-bc/components/shopping-car.vue";
 
 import {createRouter, createWebHistory} from "vue-router";
 
@@ -13,7 +14,6 @@ import inventoryComponent from "@/store-inventory-management/components/inventor
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-
         { path: "/", redirect: "/home"},
         {path: "/personal-data", component: personalDataComponent},
         { path: "/home", component: homeComponent},
@@ -31,6 +31,7 @@ const router = createRouter({
         { path: "/supplier/inventory/add" ,
             name: 'Inventory',
             component: inventoryComponent },
+        { path: "/shopping-chart", component: shoppingCar}
     ]
 })
 export default router;
