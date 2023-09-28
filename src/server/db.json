@@ -75,24 +75,24 @@
       "phone": "986236773"
     }
   ],
-  "category": [
+  "categories": [
     {
       "id": "001",
       "category": "Scrubs",
       "description": "Comfortable scrubs, many colors and sizes",
-      "photoUrl": "https://norvil-web.storage.googleapis.com/cms_multimedia/cms_medias/files/000/002/134/tablet_webp/1739_593.c141.webp?1615459779"
+      "photoUrl": "https://norvil-web.storage.googleapis.com/cms_multimedia/cms_medias/files/000/002/120/original/1149.c141.png?1615459318"
     },
     {
       "id": "002",
       "category": "Pants",
       "description": "Comfortable surgery pants, many colors and sizes",
-      "photoUrl": "https://norvil-web.storage.googleapis.com/cms_multimedia/cms_medias/files/000/002/134/tablet_webp/1739_593.c141.webp?1615459779"
+      "photoUrl": "https://norvil-web.storage.googleapis.com/cms_multimedia/cms_medias/files/000/003/098/original/82-001.png?1662105795"
     },
     {
       "id": "003",
       "category": "Coats",
       "description": "Comfortable medical coats, many colors and sizes",
-      "photoUrl": "https://norvil-web.storage.googleapis.com/cms_multimedia/cms_medias/files/000/002/134/tablet_webp/1739_593.c141.webp?1615459779"
+      "photoUrl": "https://norvil-web.storage.googleapis.com/cms_multimedia/cms_medias/files/000/002/209/original/listado.medicos_2.png?1617002175"
     },
     {
       "id": "004",
@@ -104,7 +104,7 @@
       "id": "005",
       "category": "Sanitary jackets",
       "description": "Comfortable sanitary jackets, many colors and sizes",
-      "photoUrl": "https://norvil-web.storage.googleapis.com/cms_multimedia/cms_medias/files/000/002/134/tablet_webp/1739_593.c141.webp?1615459779"
+      "photoUrl": "https://norvil-web.storage.googleapis.com/cms_multimedia/cms_medias/files/000/001/349/original/1193.jpg?1569239294"
     }
   ],
   "products": [
