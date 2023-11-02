@@ -13,7 +13,6 @@ import 'primeicons/primeicons.css'
 import 'primeflex/primeflex.css'
 
 import Button from "primevue/button";
-import Card from "primevue/card";
 import Column from "primevue/column";
 import DataTable from "primevue/datatable";
 import DataView from 'primevue/dataview';

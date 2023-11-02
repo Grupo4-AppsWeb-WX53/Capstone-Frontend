@@ -9,6 +9,10 @@ import MarketBuyerComponent from "../store-inventory-management/pages/market-buy
 import MarketSupplierComponent from "../store-inventory-management/pages/market-supplier-component.vue";
 import ProductSelectionComponent from "../store-inventory-management/pages/product-selection-component.vue"
 import inventoryComponent from "@/store-inventory-management/components/inventory-component.vue";
+import PaypalComponent from "../payments/components/paypal.component.vue";
+import StripeComponent from "../payments/components/stripe.component.vue";
+import CreditCardComponent from "../payments/components/credit-card.component.vue";
+import paymentMethodsBuyerComponent from "@/payments/pages/payment-methods-buyer.component.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -27,7 +31,10 @@ const router = createRouter({
             name: "Market-buyer",
             component: MarketBuyerComponent},
         { path: "/product-selection", name: "Product-selection",component: ProductSelectionComponent },
-
+        { path: "/credit-card", component: CreditCardComponent},
+        { path: "/paypal", component: PaypalComponent},
+        { path: "/stripe", component: StripeComponent},
+        { path: "/payment", name: 'doctor-payment-methods', component: paymentMethodsBuyerComponent},
         { path: "/supplier/inventory/add" ,
             name: 'Inventory',
             component: inventoryComponent },

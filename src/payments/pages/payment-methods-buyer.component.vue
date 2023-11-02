@@ -1,7 +1,7 @@
 
 <template>
   <div class="my-activity">
-    <h1>Payment Methods</h1>
+
     <h3>Cards</h3>
     <hr>
     <div class="activities">
